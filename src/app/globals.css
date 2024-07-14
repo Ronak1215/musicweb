@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.whychooeus{
+  /* Hide both horizontal and vertical scrollbars /
+  / WebKit (Chrome, Safari, etc.) */
+  ::-webkit-scrollbar {
+  display: none;
+  }
+}
