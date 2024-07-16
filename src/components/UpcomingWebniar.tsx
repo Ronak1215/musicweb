@@ -53,7 +53,7 @@ function UpcomingWebniar() {
     <div className="p-12 bg-gray-900 h-full">
       <div className="max-w-[96rem]  mx-auto px-4 sm:px-6">
         <div className="text-center">
-          <h2 className="text-2xl lg:text-3xl text-teal-600 font-semibold tracking-wide uppercase">FEATURED WEBINARS</h2>
+          <h2 className="text-xl lg:text-xl text-teal-600 font-semibold tracking-wide uppercase">FEATURED WEBINARS</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-6xl">Enhance Your Musical Journey</p>
         </div>
 
@@ -71,7 +71,7 @@ function UpcomingWebniar() {
 
         <div className="mt-10 text-center">
           <Link href={"/"}
-          className="px-8 py-6 rounded-lg bg-teal-500 text-white font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+          className="px-6 py-3 rounded-lg bg-teal-500 text-white font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
           >
             View All webinars
           </Link>

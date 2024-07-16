@@ -4,16 +4,16 @@ import { Button } from "./ui/moving-border";
 
 function HeroSection() {
   return (
-    <div className="h-auto md:h-[54rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
+    <div className="h-[56rem] md:h-[36rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
       />
       <div className="p-4 relative z-10 w-full text-center">
-        <h1 className="mt-28 md:mt-48 text-4xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+        <h1 className="text-5xl mt-20 md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
           Master the art of music
         </h1>
-        <p className="m-8 font-normal text-center text-base md:text-3xl text-neutral-300 max-w-3xl mx-auto">
+        <p className="m-8 font-normal text-center text-lg md:text-base text-neutral-300 max-w-xl mx-auto">
           Dive into our comprehensive music courses and transform your musical
           journey today. Whether youre a beginner or looking to refine your
           skills, join us to unlock your true potential.
@@ -22,7 +22,7 @@ function HeroSection() {
           <Link href={"/courses"}>
             <Button
               borderRadius="1.75rem"
-              className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 text-sm md:text-xl"
+              className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 text-sm md:text-sm"
             >Explore courses</Button>
           </Link>
         </div>

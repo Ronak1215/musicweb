@@ -22,7 +22,7 @@ export const StickyScroll = ({
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     const cardsBreakpoints = content.map((_, index) => index / cardLength);
     cardsBreakpoints.forEach((breakpoint, index) => {
-      if (latest > breakpoint - 0.09 && latest <= breakpoint) {
+      if (latest > breakpoint - 0.17 && latest <= breakpoint) {
         setActiveCard(() => index);
       }
     });
@@ -43,13 +43,13 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[40rem] overflow-y-auto flex justify-center relative md:space-x-2 xl:space-x-96 rounded-md p-14"
+      className="h-[30rem] overflow-y-auto flex justify-center relative md:space-x-2 xl:space-x-96 rounded-md p-14"
       ref={ref}
     >
-      <div className="div relative flex items-start px-4">
-        <div className="md:max-w-4xl">
+      <div className="div relative flex items-start">
+        <div className="md:max-w-md">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
+            <div key={item.title + index} className="my-10">
               <motion.h2
                 initial={{
                   opacity: 0,
@@ -57,7 +57,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-4xl font-bold text-slate-100"
+                className="text-xl font-bold text-slate-100"
               >
                 {item.title}
               </motion.h2>
@@ -68,7 +68,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl text-slate-300 max-w-sm mt-10"
+                className="text-base text-slate-300 max-w-sm mt-10"
               >
                 {item.description}
               </motion.p>
