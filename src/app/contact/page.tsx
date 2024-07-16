@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 
 
 function Page() {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState<string>('')
+  const [message, setMessage] = useState<string>('')
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
