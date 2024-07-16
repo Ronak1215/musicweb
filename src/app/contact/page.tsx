@@ -4,7 +4,9 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Footer from "@/components/Footer";
 
-function page() {
+
+
+function Page() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
@@ -61,5 +63,6 @@ function page() {
   );
 }
 
+export default Page
 
-export default page
+
